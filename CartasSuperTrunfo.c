@@ -1,22 +1,77 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+// Carta 1
+    char estado;
+    char codigo[10];
+    char cidade[30];
+    int populacao;
+    float area;
+    float pib;
+    int turismo;
+
+// Carta 2
+    char Estado;
+    char Codigo[10];
+    char Cidade[30];
+    int Populacao;
+    float Area;
+    float Pib;
+    int Turismo;
+
+// Turismo refere-se à quantidade de pontos turísticos na cidade
+
+    // Primeira carta
+    printf("Digite uma sigla para sua primeira cidade (1 letra apenas): \n");
+    scanf(" %c", &estado);
+
+    printf("Digite o código de sua cidade (número inteiro de 1 - 4): \n");
+    scanf("%s", codigo);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", cidade);
+
+    printf("Digite a população da cidade: \n");
+    scanf("%d", &populacao);
+
+    printf("Digite, em quilômetros, a área da cidade, em números inteiros: \n");
+    scanf("%f", &area);
+
+    printf("Digite: O PIB da cidade, em números inteiros:  \n");
+    scanf("%f", &pib);
+
+    printf("Digite a quantidade de pontos turísticos da cidade: \n");
+    scanf("%d", &turismo);
+
+    // Segunda carta
+    printf("Digite uma sigla para sua segunda cidade (1 letra apenas): \n");
+    scanf(" %c", &Estado);
+
+    printf("Digite o código de sua cidade (número inteiro de 1 - 4): \n");
+    scanf("%s", Codigo);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", Cidade);
+
+    printf("Digite a população da cidade: \n");
+    scanf("%d", &Populacao);
+
+    printf("Digite, em quilômetros, a área da cidade, em números inteiros: \n");
+    scanf("%f", &Area);
+
+    printf("Digite: O PIB da cidade, em números inteiros:  \n");
+    scanf("%f", &Pib);
+
+    printf("Digite a quantidade de pontos turísticos da cidade: \n");
+    scanf("%d", &Turismo);
+
+    // Resultados Finais
+    printf(" Carta 1\n");
+    printf("Estado: %c \nCódigo: %s \nNome da cidade: %s \nPopulação: %d \nÁrea: %.0f \nPIB: %.2f \nPontos turísticos: %d \n", estado, codigo, cidade, populacao, area, pib, turismo);
+
+    printf(" Carta 2\n");
+    printf("Estado: %c \nCódigo: %s \nNome da cidade: %s \nPopulação: %d \nÁrea: %.0f \nPIB: %.2f \nPontos turísticos: %d \n", Estado, Codigo, Cidade, Populacao, Area, Pib, Turismo);
 
     return 0;
 }
