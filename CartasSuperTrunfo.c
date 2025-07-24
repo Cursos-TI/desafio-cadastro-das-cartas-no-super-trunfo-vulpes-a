@@ -237,7 +237,7 @@ switch (atributo){
     case 7:
         if (superpoder1 > superpoder2) {
             printf("Carta 1 ganha no super poder!\n");
-        } else if (superpoder1 < superpoder2){  // aqui você comparou populacao < populacao2 por engano
+        } else if (superpoder1 < superpoder2){
             printf("Carta 2 ganha no super poder!\n");
         } else {
             printf("Empate!\n");
